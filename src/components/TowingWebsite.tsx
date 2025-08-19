@@ -4,6 +4,28 @@ import { Phone, Clock, MapPin, Car, Bike, Wrench, Star, CheckCircle } from 'luci
 const TowingWebsite = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans" dir="rtl">
+      {/* SEO Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "גרירה מהירה - אזור המרכז",
+            "description": "שירותי גרירה מקצועיים ואמינים באזור המרכז",
+            "url": "https://towing-website-one.vercel.app",
+            "telephone": "+972-50-123-4567",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "מחוז המרכז",
+              "addressCountry": "IL"
+            },
+            "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+            "areaServed": ["תל אביב-יפו", "פתח תקווה", "רמת גן", "בני ברק"]
+          })
+        }}
+      />
+
       {/* Header */}
       <header className="bg-blue-900 text-white py-4 sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto px-4 flex justify-between items-center">
@@ -21,8 +43,8 @@ const TowingWebsite = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-l from-blue-600 to-blue-800 text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-5xl font-bold mb-6">שירותי גרירה מקצועיים 24/7</h2>
-          <p className="text-xl mb-8">גרירת מכוניות ואופנועים באזור המרכז • זמינים 24 שעות ביממה</p>
+          <h2 className="text-5xl font-bold mb-6">שירותי גרירה מקצועיים 24/7 באזור המרכז</h2>
+          <p className="text-xl mb-8">גרירת מכוניות ואופנועים | תל אביב, פתח תקווה, רמת גן | זמני הגעה מהירים</p>
           <div className="flex justify-center space-x-reverse space-x-4 mb-8">
             <div className="flex items-center space-x-reverse space-x-2">
               <Clock className="h-6 w-6" />
@@ -53,26 +75,26 @@ const TowingWebsite = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
               <Car className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">גרירת מכוניות</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">גרירת מכוניות מקצועית</h3>
               <p className="text-gray-600 leading-relaxed">
-                שירותי גרירה מקצועיים לכל סוגי הרכבים • גרירה בטוחה ומהירה • 
-                ציוד מתקדם ומנוסה של עשרות שנים
+                שירותי גרירה מקצועיים לכל סוגי הרכבים באזור המרכז • גרירה בטוחה ומהירה • 
+                ציוד מתקדם ומנוסה של עשרות שנים • תל אביב, פתח תקווה, רמת גן
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
               <Bike className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">גרירת אופנועים</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">גרירת אופנועים וקטנועים</h3>
               <p className="text-gray-600 leading-relaxed">
-                שירותי גרירה מיוחדים לאופנועים וקטנועים • טיפול זהיר ומקצועי • 
-                ציוד מותאם לאופנועים
+                שירותי גרירה מיוחדים לאופנועים וקטנועים באזור המרכז • טיפול זהיר ומקצועי • 
+                ציוד מותאם לאופנועים • שירות 24 שעות ביממה
               </p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
               <Wrench className="h-16 w-16 text-blue-600 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">שירותי דרך</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">שירותי דרך מקצועיים</h3>
               <p className="text-gray-600 leading-relaxed">
                 החלפת גלגלים • הנעת רכב • טעינת מצבר • פתיחת רכבים נעולים • 
-                דלק חירום בדרך
+                דלק חירום בדרך • שירות זמין באזור המרכז 24/7
               </p>
             </div>
           </div>
@@ -152,6 +174,31 @@ const TowingWebsite = () => {
                   <li>• רחובות</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">שאלות נפוצות - גרירה באזור המרכז</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold mb-4 text-blue-600">כמה זמן לוקח להגיע לגרירה?</h3>
+              <p className="text-gray-700">באזור המרכז אנחנו מגיעים תוך 15-30 דקות בשעות רגילות ותוך 20-40 דקות בשעות לילה. במקרי חירום אנחנו מתאמצים להגיע מהר ככל האפשר.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold mb-4 text-blue-600">כמה עולה גרירה באזור המרכז?</h3>
+              <p className="text-gray-700">המחיר תלוי במרחק ובסוג הרכב. אנחנו נותנים מחיר הוגן ושקוף ללא הפתעות. התקשרו לקבלת הצעת מחיר מיידית.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold mb-4 text-blue-600">איזה אזורים אתם מכסים?</h3>
+              <p className="text-gray-700">אנחנו נותני שירות בכל אזור המרכז: תל אביב, פתח תקווה, רמת גן, בני ברק, הרצליה, רעננה, כפר סבא, הוד השרון, נתניה ועוד.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-xl font-bold mb-4 text-blue-600">האם אתם זמינים 24 שעות ביממה?</h3>
+              <p className="text-gray-700">כן! אנחנו זמינים 24 שעות ביממה, 7 ימים בשבוע, כולל חגים ושבתות. גרירה חירום זמינה תמיד.</p>
             </div>
           </div>
         </div>
