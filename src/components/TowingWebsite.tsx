@@ -147,7 +147,7 @@ const TowingWebsite = () => {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-blue-600">מרכז הארץ</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>• תל אביב-יפו</li>
+                <li>• <a href="/tel-aviv" className="text-blue-600 hover:text-blue-800 font-medium">תל אביב-יפו</a></li>
                   <li>• פתח תקווה</li>
                   <li>• רמת גן</li>
                   <li>• בני ברק</li>
@@ -178,6 +178,26 @@ const TowingWebsite = () => {
           </div>
         </div>
       </section>
+
+{/* Featured Cities Section */}
+<section className="py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">שירותי גרירה בערים מובילות</h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="bg-gradient-to-b from-blue-50 to-blue-100 p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+        <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+        <h3 className="text-xl font-bold mb-3 text-gray-800">גרירה בתל אביב</h3>
+        <p className="text-gray-600 mb-4">שירות מקצועי 24/7 בכל שכונות תל אביב</p>
+        <a 
+          href="/tel-aviv" 
+          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors inline-block"
+        >
+          לפרטים נוספים
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
