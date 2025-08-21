@@ -213,13 +213,13 @@ const CityPage: React.FC<CityPageProps> = ({
       {/* Back to Main Site */}
       <section className="py-8 bg-gray-100">
         <div className="container mx-auto px-4 text-center">
-          <a 
+          <Link 
             href="/" 
             className="inline-flex items-center space-x-reverse space-x-2 text-blue-600 hover:text-blue-800 text-lg font-medium"
           >
             <ArrowRight className="h-5 w-5" />
             <span>חזרה לעמוד הראשי - שירותי גרירה באזור המרכז</span>
-          </a>
+          </Link>
         </div>
       </section>
 
