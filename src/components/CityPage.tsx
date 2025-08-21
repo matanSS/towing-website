@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Phone, Clock, MapPin, Car, Bike, Wrench, Star, CheckCircle, ArrowRight } from 'lucide-react';
 
 interface CityPageProps {
@@ -79,12 +80,12 @@ const CityPage: React.FC<CityPageProps> = ({
               <span>הגעה תוך 15-30 דקות</span>
             </div>
           </div>
-          <a 
-            href="tel:0501234567" 
-            className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg text-xl transition-colors inline-block"
-          >
+          <Link 
+  href="/" 
+  className="inline-flex items-center space-x-reverse space-x-2 text-blue-600 hover:text-blue-800 text-lg font-medium"
+>
             התקשר עכשיו לגרירה ב{cityNameHebrew}: 050-123-4567
-          </a>
+            </Link>
         </div>
       </section>
 
