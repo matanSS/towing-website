@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'; 
 import { Phone, Clock, MapPin, Car, Bike, Wrench, Star, CheckCircle } from 'lucide-react';
 
 const TowingWebsite = () => {
@@ -147,7 +148,7 @@ const TowingWebsite = () => {
               <div>
                 <h3 className="text-xl font-bold mb-4 text-blue-600">מרכז הארץ</h3>
                 <ul className="space-y-2 text-gray-700">
-                <li>• <a href="/tel-aviv" className="text-blue-600 hover:text-blue-800 font-medium">תל אביב-יפו</a></li>
+                <li>• <Link href="/tel-aviv" className="text-blue-600 hover:text-blue-800 font-medium">תל אביב-יפו</Link></li>
                   <li>• פתח תקווה</li>
                   <li>• רמת גן</li>
                   <li>• בני ברק</li>
@@ -188,12 +189,12 @@ const TowingWebsite = () => {
         <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-4" />
         <h3 className="text-xl font-bold mb-3 text-gray-800">גרירה בתל אביב</h3>
         <p className="text-gray-600 mb-4">שירות מקצועי 24/7 בכל שכונות תל אביב</p>
-        <a 
-          href="/tel-aviv" 
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors inline-block"
-        >
-          לפרטים נוספים
-        </a>
+        <Link 
+  href="/tel-aviv" 
+  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors inline-block"
+>
+  לפרטים נוספים
+</Link>
       </div>
     </div>
   </div>
