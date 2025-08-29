@@ -12,9 +12,10 @@ const TowingWebsite = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
+            "@id": "https://grira24.co.il"
             "name": "גרירה מהירה - אזור המרכז",
             "description": "שירותי גרירה מקצועיים ואמינים באזור המרכז",
-            "url": "https://towing-website-one.vercel.app",
+            "url": "https://grira24.co.il",
             "telephone": "+972-50-123-4567",
             "address": {
               "@type": "PostalAddress",

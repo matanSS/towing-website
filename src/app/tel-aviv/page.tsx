@@ -20,7 +20,7 @@ export default function TelAvivPage() {
         "תחנה מרכזית", "אוניברסיטת תל אביב", "בית החולים איכילוב", "קרית השדה"
       ]}
       description="גרירת מכוניות ואופנועים מקצועית בתל אביב • זמני הגעה מהירים לכל שכונות העיר • שירות 24 שעות ביממה"
-      pageUrl="https://towing-website-one.vercel.app/tel-aviv"
+      pageUrl="https://grira24.co.il/tel-aviv"
     />
   );
 }
