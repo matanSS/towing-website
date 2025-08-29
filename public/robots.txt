@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://towing-website-one.vercel.app/sitemap.xml
+Sitemap: https://grira24.co.il/sitemap.xml
