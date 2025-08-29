@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'שירותי גרירה מקצועיים באזור המרכז. זמינים 24 שעות ביממה',
     type: 'website',
     locale: 'he_IL',
-    url: 'https://towing-website-one.vercel.app',
+    url: 'https://grira24.co.il',
   },
 }
 
